@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Особенное романтическое предложение">
+  <title>Для тебя ♥</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <div class="decor decor--hearts" id="decorHearts"></div>
+    <div class="decor decor--stars" id="decorStars"></div>
+    <div class="decor decor--glow"></div>
+  </div>
+  <main class="app" id="app">
+    <div class="card-stage" id="cardStage">
+      <article class="card" id="questionCard" aria-labelledby="question-heading">
+        <div class="card__ornament" aria-hidden="true">
+          <svg class="card__heart" viewBox="0 0 24 24" width="36" height="36" role="img" aria-label="">
+            <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+        <h1 class="card__title" id="question-heading">
+          Самира Анзоровна, согласны ли Вы вступить во взрослые официальные романтические отношения с Адамом Муратовичем?
+        </h1>
+        <div class="card__actions">
+          <button type="button" class="btn btn--yes" id="btnYes">Да</button>
+          <button type="button" class="btn btn--no" id="btnNo">Нет</button>
+        </div>
+      </article>
+    </div>
+    <section class="celebration" id="celebration" hidden aria-live="polite">
+      <div class="celebration__confetti" id="confetti" aria-hidden="true"></div>
+      <div class="celebration__content">
+        <svg class="celebration__heart" viewBox="0 0 24 24" width="72" height="72" aria-hidden="true">
+          <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <p class="celebration__text">
+          Поздравляем! Вы стали счастливым обладателем любви Адама! Возьмите свой <span class="celebration__highlight">приз в бордачке</span>.
+        </p>
+      </div>
+      <div class="celebration__float-hearts" id="floatHearts" aria-hidden="true"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
